@@ -245,3 +245,80 @@
      - 含有抽象方法的类叫做抽象类
      - 方法是空实现的（ pass ）称之为抽象方法
 
+
+
+# SQL
+
+## SQL基础与DDL
+
+查看数据库 
+
+```sql
+SHOW DATABASES;
+```
+
+使用数据库 
+
+```sql
+USE 数据库名称;
+```
+
+创建数据库
+
+```sql
+ CREATE DATABASE 数据库名称 [CHARSET UTF8];
+```
+
+删除数据库
+
+```sql
+DROP DATABASE 数据库名称;
+```
+
+查看当前使用的数据库
+
+```sql
+SELECT DATABASE();
+```
+
+查看有哪些表
+
+```sql
+SHOW TABLES;
+```
+
+删除表
+
+```sql
+DROP TABLE 表名称;
+DROP IF EXISTS 表名称;
+```
+
+创建表
+
+```sql
+CREATE TABLE 表名称(
+	列名称 列类型,
+    列名称 列类型,
+    ... ...
+)
+```
+
+## SQL - DML
+
+数据插入
+
+```sql
+# INSERT INTO 表[(列1,列2,......列N)] VALUES(值1,值2,......,值N)[,(值1,值2,......,值N)......,(值1,值2,......,值N)]
+
+INSERT INTO student(id) VALUES(1),(2),(3);
+INSERT INTO student VALUES(4,'周杰伦',31),(5,'林俊杰',33);
+```
+
+数据删除
+
+```sql
+# DELETE FROM 表名称 [WHERE 条件判断]
+DELETE FROM student WHER
+```
+
